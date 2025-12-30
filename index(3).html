@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southline Development Services | Telecom Infrastructure & Investment Due Diligence</title>
+    <meta name="description" content="Expert site acquisition, permitting strategy, and due diligence for telecom infrastructure and real estate investors. Cut deployment timelines. Avoid costly mistakes.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <style>
+        :root {
+            --color-primary: #1a3a52;
+            --color-secondary: #2d5f7f;
+            --color-accent: #f97316;
+            --color-accent-light: #fb923c;
+            --color-bg: #fafaf9;
+            --color-bg-alt: #ffffff;
+            --color-text: #1f2937;
+            --color-text-light: #6b7280;
+            --color-border: #e5e7eb;
+            
+            --font-display: 'Fraunces', serif;
+            --font-body: 'DM Sans', sans-serif;
+            
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 6rem;
+            
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background: var(--color-bg);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--color-primary);
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        p {
+            font-size: 1.125rem;
+            color: var(--color-text-light);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        /* Header/Navigation */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border);
+            z-index: 1000;
+            padding: var(--spacing-sm) 0;
+        }
+        
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: var(--spacing-md);
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background: var(--color-accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background: var(--color-accent-light);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        
+        .section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #1a3a52 0%, #2d5f7f 100%);
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(249, 115, 22, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(45, 95, 127, 0.2) 0%, transparent 50%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+        
+        .hero h1 {
+            color: white;
+            margin-bottom: var(--spacing-md);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-md);
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: var(--spacing-sm);
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+        
+        .cta-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .cta-secondary:hover {
+            background: white;
+            color: var(--color-primary);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--color-bg-alt);
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .trust-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-lg);
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            display: block;
+        }
+        
+        .trust-label {
+            color: var(--color-text-light);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        
+        .service-card {
+            background: var(--color-bg-alt);
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            border: 1px solid var(--color-border);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: var(--color-accent);
+            transition: height 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card:hover::before {
+            height: 100%;
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .service-price {
+            font-family: var(--font-display);
+            color: var(--color-accent);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: var(--spacing-sm) 0;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin: var(--spacing-sm) 0;
+        }
+        
+        .service-features li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--color-text-light);
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+        
+        /* Case Studies */
+        .case-study {
+            background: var(--color-bg-alt);
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            border-left: 4px solid var(--color-accent);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .case-study-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: var(--spacing-sm);
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }
+        
+        .case-study-tag {
+            background: var(--color-accent);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .case-study-result {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            margin: var(--spacing-sm) 0;
+        }
+        
+        /* Download Section */
+        .download-box {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            padding: var(--spacing-lg);
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .download-box::before {
+            content: '📋';
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.05;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+        }
+        
+        .download-box h3 {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .download-box p {
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .download-form {
+            display: flex;
+            gap: var(--spacing-sm);
+            max-width: 500px;
+            margin: var(--spacing-md) auto 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .download-form input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        .download-form button {
+            background: var(--color-accent);
+            padding: 0.75rem 2rem;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+        }
+        
+        .stat-box {
+            background: var(--color-bg-alt);
+            padding: var(--spacing-md);
+            border-radius: 12px;
+            border: 1px solid var(--color-border);
+        }
+        
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-accent);
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+        }
+        
+        .contact-info {
+            background: var(--color-bg-alt);
+            padding: var(--spacing-md);
+            border-radius: 12px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin: var(--spacing-sm) 0;
+            padding: var(--spacing-sm);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+        
+        .contact-item:hover {
+            background: var(--color-bg);
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .contact-form {
+            background: var(--color-bg-alt);
+            padding: var(--spacing-md);
+            border-radius: 12px;
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--color-accent);
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: white;
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+        
+        footer p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                min-height: 70vh;
+            }
+            
+            .trust-content {
+                gap: var(--spacing-md);
+            }
+            
+            .download-form {
+                flex-direction: column;
+            }
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .bg-alt {
+            background: var(--color-bg-alt);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Southline Development</a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Stop Wasting Months on Infrastructure Permitting</h1>
+                <p>We help wireless carriers and real estate investors navigate zoning, permitting, and site acquisition for telecom infrastructure projects—cutting timelines in half and avoiding costly mistakes.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Schedule Free Consultation</a>
+                    <a href="#services" class="cta-button cta-secondary">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-content">
+                <div class="trust-item">
+                    <span class="trust-number">15+</span>
+                    <span class="trust-label">Years Experience</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">500+</span>
+                    <span class="trust-label">Sites Evaluated</span>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">12 Mo</span>
+                    <span class="trust-label">Avg. Time Saved</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Services Built for Speed & Certainty</h2>
+                <p>From initial feasibility to final permits—we handle the complexity so you can focus on deployment.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">📡</div>
+                    <h3>Small Cell Site Acquisition</h3>
+                    <p class="service-price">Starting at $8,000</p>
+                    <p style="font-size: 0.875rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Typical projects: $8K-15K | Multi-site deployments priced individually</em></p>
+                    <p>Cut deployment timelines in half by securing optimal sites and navigating municipal permitting efficiently.</p>
+                    <ul class="service-features">
+                        <li>Site identification & feasibility analysis</li>
+                        <li>Municipal permitting strategy & coordination</li>
+                        <li>Landlord negotiations & access agreements</li>
+                        <li>Utility coordination & ROW approvals</li>
+                        <li>Public hearing preparation & representation</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Infrastructure Due Diligence</h3>
+                    <p class="service-price">Starting at $10,000</p>
+                    <p style="font-size: 0.875rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Portfolio pricing scales with complexity | Large portfolios: $25K-75K+</em></p>
+                    <p>Avoid million-dollar infrastructure mistakes with comprehensive pre-acquisition analysis for investors and developers.</p>
+                    <ul class="service-features">
+                        <li>Existing infrastructure audit & valuation</li>
+                        <li>Telecom/utility contract analysis</li>
+                        <li>Hidden risk identification & cost exposure</li>
+                        <li>Redevelopment opportunity assessment</li>
+                        <li>Investment-grade reporting & recommendations</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Zoning & Entitlement Strategy</h3>
+                    <p class="service-price">Starting at $5,000</p>
+                    <p style="font-size: 0.875rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Simple variance: $5K-8K | Complex entitlements priced by scope</em></p>
+                    <p>Navigate complex zoning regulations and secure necessary approvals without costly delays or surprises.</p>
+                    <ul class="service-features">
+                        <li>Zoning compliance analysis & feasibility studies</li>
+                        <li>Variance & special use permit applications</li>
+                        <li>Environmental & impact assessment coordination</li>
+                        <li>Community engagement & stakeholder management</li>
+                        <li>Timeline optimization & approval pathway planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section">
+        <div class="container">
+            <div class="download-box">
+                <h3>Free Download: Small Cell Site Selection Checklist</h3>
+                <p>10 critical red flags to identify before spending $35K on site development. Learn what experienced operators check first.</p>
+                <form class="download-form" name="download" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="download">
+                    <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button">Download Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="section bg-alt">
+        <div class="container">
+            <div class="text-center">
+                <h2>Proven Results Across Infrastructure Projects</h2>
+                <p>Real projects. Real outcomes. Real savings.</p>
+            </div>
+
+            <div style="margin-top: 3rem;">
+                <!-- Case Study 1 -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <h3>Midwest Small Cell Deployment</h3>
+                        <span class="case-study-tag">5G Infrastructure</span>
+                    </div>
+                    <p>Wireless carrier needed to deploy 25 small cell sites across dense urban corridor. Initial timeline: 24+ months due to municipal permitting complexity.</p>
+                    <p class="case-study-result">Reduced deployment timeline to 9 months • Saved $350K in holding costs</p>
+                    <p><strong>Solution:</strong> Identified pre-approved utility pole locations, streamlined multi-jurisdiction permitting through coordinated municipal outreach, and negotiated accelerated review timelines by aligning deployment with city's broadband expansion goals.</p>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <h3>Multi-Family Property Portfolio Analysis</h3>
+                        <span class="case-study-tag">Due Diligence</span>
+                    </div>
+                    <p>Private equity firm acquiring 12-property multifamily portfolio needed infrastructure assessment before closing. Existing telecom contracts and rooftop leases poorly documented.</p>
+                    <p class="case-study-result">Identified $180K in annual hidden revenue • Avoided $420K liability exposure</p>
+                    <p><strong>Solution:</strong> Comprehensive infrastructure audit revealed undervalued rooftop lease agreements and identified improper tenant billing practices. Client renegotiated contracts pre-acquisition, adding significant asset value.</p>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <h3>Mixed-Use Development Zoning Strategy</h3>
+                        <span class="case-study-tag">Entitlements</span>
+                    </div>
+                    <p>Developer planning mixed-use redevelopment faced restrictive zoning and community opposition. Project at risk of 18+ month delay or cancellation.</p>
+                    <p class="case-study-result">Secured approvals in 7 months • Maintained full project scope</p>
+                    <p><strong>Solution:</strong> Developed comprehensive community benefits package, coordinated early stakeholder engagement, and identified creative zoning solutions that satisfied both municipal requirements and neighborhood concerns without reducing density.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2>Built on Real-World Infrastructure Experience</h2>
+                    <p>Over 15 years navigating the complex intersection of real estate, telecommunications infrastructure, and municipal regulation across urban, suburban, and rural markets.</p>
+                    <p>Experience spans:</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            Small cell & DAS network deployments
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            EV charging infrastructure site acquisition
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            Fiber-to-the-home network expansion
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            Renewable energy project permitting
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            Commercial real estate due diligence
+                        </li>
+                    </ul>
+                    <p style="margin-top: 1.5rem;"><strong>Currently advising infrastructure projects across the Chicago metro area and Midwest region.</strong></p>
+                    <p><em>Independent advisory—no brokerage incentives, no development bias. Recommendations based solely on feasibility, risk, and your project goals.</em></p>
+                    <p style="margin-top: 1rem; padding: 1rem; background: var(--color-bg); border-radius: 8px; font-size: 0.95rem;">
+                        <strong>Enterprise & Portfolio Projects:</strong> Large-scale deployments and institutional portfolios are scoped individually based on complexity and scale. <a href="#contact" style="color: var(--color-accent); text-decoration: none; font-weight: 600;">Contact us</a> to discuss your specific needs.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">500+</div>
+                        <div>Sites Evaluated & Acquired</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">15+</div>
+                        <div>Years Infrastructure Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100+</div>
+                        <div>Municipal Approvals Secured</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">$50M+</div>
+                        <div>Project Value Facilitated</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h2>Get Clear Answers Before You Commit Capital</h2>
+                <p>A focused consultation to assess feasibility, risks, and next steps for your project.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Discuss Your Project</h3>
+                    <p>Whether you're planning a telecom deployment, evaluating an acquisition, or navigating complex zoning—we provide clarity before you commit time or money.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:info@southlinedevelopment.com" style="color: var(--color-accent); text-decoration: none;">info@southlinedevelopment.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:3125471138" style="color: var(--color-accent); text-decoration: none;">(312) 547-1138</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Location</strong><br>
+                            Chicago, Illinois<br>
+                            <span style="font-size: 0.875rem; color: var(--color-text-light);">Serving Midwest & National Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Request a Consultation</h3>
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Project Type *</label>
+                            <select name="project-type" required>
+                                <option value="">Select...</option>
+                                <option value="small-cell">Small Cell / 5G Deployment</option>
+                                <option value="due-diligence">Infrastructure Due Diligence</option>
+                                <option value="zoning">Zoning & Entitlements</option>
+                                <option value="ev-charging">EV Charging Infrastructure</option>
+                                <option value="fiber">Fiber Network Expansion</option>
+                                <option value="other">Other Infrastructure Project</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Project Details</label>
+                            <textarea name="project-details" placeholder="Brief description of your project, timeline, and what you need help with..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%;">Request Free Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Southline Development Services. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.875rem;">Expert infrastructure site acquisition, permitting, and due diligence services.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
