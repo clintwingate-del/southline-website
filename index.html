@@ -672,6 +672,18 @@
     <!-- Services Section -->
     <section id="services" class="section">
         <div class="container">
+            <!-- Battery Storage Feature Banner -->
+            <div style="background: linear-gradient(135deg, #1a3a52 0%, #2d5f7f 100%); padding: 2rem; border-radius: 12px; margin-bottom: 3rem; text-align: center; border: 3px solid #f97316;">
+                <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔋</div>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 0.75rem; font-family: 'Fraunces', serif;">Illinois Battery Storage Permitting Specialist</h3>
+                <p style="color: #e5e7eb; font-size: 1.05rem; margin-bottom: 1.25rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    New CRGA legislation unlocking $280M+ for energy storage projects. We help developers navigate approvals and secure sites for Illinois' 3,000 MW battery storage target by 2030.
+                </p>
+                <a href="#battery-storage-download" style="display: inline-block; background: #f97316; color: #ffffff; padding: 0.875rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s ease;">
+                    Download Free CRGA Permitting Guide →
+                </a>
+            </div>
+            
             <div class="text-center">
                 <h2>Flexible Solutions for Every Infrastructure Challenge</h2>
                 <p>Choose standalone services or combine them into a custom package—we adapt to what you need.</p>
@@ -759,18 +771,19 @@
                 </div>
 
                 <!-- Service 6 -->
-                <div class="service-card">
-                    <div class="service-icon">☀️</div>
-                    <h3>Energy Infrastructure Permitting</h3>
-                    <p class="service-price">Starting at $4,000</p>
-                    <p style="font-size: 0.875rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Solar, battery backup, microgrids, EV charging infrastructure</em></p>
-                    <p>Secure approvals for solar installations, energy storage, and backup power systems.</p>
+                <div class="service-card" style="border: 2px solid #f97316;">
+                    <div style="position: absolute; top: -12px; right: 20px; background: #f97316; color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: bold;">FEATURED</div>
+                    <div class="service-icon">🔋</div>
+                    <h3>Battery Storage Permitting (CRGA)</h3>
+                    <p class="service-price">Starting at $5,000</p>
+                    <p style="font-size: 0.875rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Utility-scale, C&I, community solar+storage, residential programs</em></p>
+                    <p>Navigate Illinois' Clean and Reliable Grid Affordability Act requirements and secure approvals for energy storage projects.</p>
                     <ul class="service-features">
-                        <li>Zoning & land use approvals</li>
-                        <li>Utility interconnection coordination</li>
-                        <li>Environmental & building permits</li>
-                        <li>Community solar project approvals</li>
-                        <li>Grid modernization compliance</li>
+                        <li>CRGA funding program guidance & applications</li>
+                        <li>Utility interconnection coordination (ComEd/Ameren)</li>
+                        <li>Fire marshal approval & safety compliance (NFPA 855)</li>
+                        <li>Special use permits & zoning approvals</li>
+                        <li>Coal-to-Solar Grant Program navigation ($110K/MW)</li>
                     </ul>
                 </div>
 
@@ -815,17 +828,29 @@
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section class="section">
+    <!-- Download Section - Battery Storage Guide -->
+    <section id="battery-storage-download" class="section" style="background: linear-gradient(to bottom, #fafaf9 0%, #ffffff 100%);">
         <div class="container">
-            <div class="download-box">
-                <h3>Free Download: Small Cell Site Selection Checklist</h3>
+            <div class="download-box" style="border: 2px solid #f97316;">
+                <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔋</div>
+                <h3>Free Download: Illinois Battery Storage Permitting Guide</h3>
+                <p>Navigate CRGA requirements, funding opportunities, and approval processes for energy storage projects. Includes permitting checklists, timeline expectations, and strategic site selection criteria.</p>
+                <form class="download-form" name="battery-download" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?battery-download=true">
+                    <input type="hidden" name="form-name" value="battery-download">
+                    <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button">Download CRGA Guide Now</button>
+                </form>
+            </div>
+            
+            <div class="download-box" style="margin-top: 2rem;">
+                <h3>Also Available: Small Cell Site Selection Checklist</h3>
                 <p>10 critical red flags to identify before spending $35K on site development. Learn what experienced operators check first.</p>
                 <form class="download-form" name="download" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?download=true">
                     <input type="hidden" name="form-name" value="download">
                     <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
                     <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit" class="cta-button">Download Now</button>
+                    <button type="submit" class="cta-button" style="background: var(--color-secondary);">Download Small Cell Checklist</button>
                 </form>
             </div>
         </div>
@@ -1037,6 +1062,12 @@
             
             if (urlParams.get('download') === 'true') {
                 alert('Thank you! Please check your email for the Small Cell Site Selection Checklist download link.');
+                // Clean URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+            
+            if (urlParams.get('battery-download') === 'true') {
+                alert('Thank you! Check your email for the Illinois Battery Storage Permitting Guide download link.');
                 // Clean URL
                 window.history.replaceState({}, document.title, window.location.pathname);
             }
