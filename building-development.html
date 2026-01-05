@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building & Development - Chicago Permit Expediting | Southline Development</title>
+    <meta name="description" content="Permit expediting and project coordination for construction projects in Chicago. DOB, DPD, CDOT expertise for residential and commercial development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --charcoal: #1a1d23;
+            --chicago-blue: #003e7e;
+            --copper: #b87333;
+            --rust: #a0522d;
+            --steel: #6b7280;
+            --concrete: #e5e7eb;
+            --white: #ffffff;
+            --construction-orange: #f97316;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            color: var(--charcoal);
+            line-height: 1.6;
+            background: var(--white);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(26, 29, 35, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1.5rem 5%;
+            border-bottom: 2px solid var(--copper);
+        }
+
+        nav .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        nav .logo span {
+            color: var(--copper);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--concrete);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: var(--copper);
+        }
+
+        /* Hero */
+        .hero {
+            margin-top: 80px;
+            padding: 6rem 5% 4rem;
+            background: linear-gradient(135deg, var(--charcoal) 0%, #2d3748 100%);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(249, 115, 22, 0.05) 2px, rgba(249, 115, 22, 0.05) 4px),
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(249, 115, 22, 0.05) 2px, rgba(249, 115, 22, 0.05) 4px);
+        }
+
+        .hero .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .hero .lead {
+            font-size: 1.3rem;
+            color: var(--concrete);
+            max-width: 800px;
+            line-height: 1.7;
+        }
+
+        /* Content */
+        .content {
+            padding: 6rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .content h3 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.8rem;
+            color: var(--chicago-blue);
+            margin: 3rem 0 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .content p {
+            color: var(--steel);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--construction-orange), #ea580c);
+            color: var(--white);
+            padding: 3rem;
+            margin: 3rem 0;
+            border-left: 5px solid var(--copper);
+        }
+
+        .highlight-box h3 {
+            color: var(--white);
+            margin-top: 0;
+        }
+
+        .highlight-box p {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .service-item {
+            background: var(--white);
+            border: 2px solid var(--concrete);
+            padding: 2.5rem;
+            transition: all 0.3s;
+        }
+
+        .service-item:hover {
+            border-color: var(--construction-orange);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item h4 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-item li {
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.75rem;
+            color: var(--steel);
+        }
+
+        .service-item li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--construction-orange);
+            font-weight: bold;
+        }
+
+        .pricing {
+            font-weight: 600;
+            color: var(--chicago-blue);
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+        }
+
+        .comparison-table {
+            background: var(--white);
+            border: 2px solid var(--concrete);
+            padding: 2.5rem;
+            margin: 3rem 0;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            font-family: 'Oswald', sans-serif;
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--concrete);
+            color: var(--steel);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table .highlight {
+            background: rgba(249, 115, 22, 0.1);
+            font-weight: 600;
+            color: var(--charcoal);
+        }
+
+        .cta {
+            background: var(--charcoal);
+            color: var(--white);
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .cta .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .cta h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            color: var(--concrete);
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--copper);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 2px;
+            transition: all 0.3s;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background: var(--rust);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: var(--concrete);
+            padding: 3rem 5%;
+            border-top: 2px solid var(--copper);
+        }
+
+        footer .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--copper);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">SOUTHLINE<span>.</span></a>
+            <ul>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#expertise">Expertise</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Building & Development Services</h1>
+            <p class="lead">Navigate Chicago's complex permitting process faster. Expert permit expediting, zoning support, and utility coordination for residential and commercial construction projects.</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="highlight-box">
+            <h3>Stop Losing Time to Chicago Permitting Delays</h3>
+            <p>Chicago's Department of Buildings, Department of Planning and Development, and CDOT permitting can take 6-12+ weeks when handled in-house. We expedite permits in 2-4 weeks, getting your projects to construction faster and reducing costly delays.</p>
+        </div>
+
+        <h2>Chicago Permit Expediting Services</h2>
+        <p>We handle the entire permitting process on your behalf, from initial submission through final approval. Our relationships with city departments, experience with Chicago's requirements, and dedicated focus on your permits accelerates timelines and eliminates headaches.</p>
+
+        <div class="services-grid">
+            <div class="service-item">
+                <h4>Residential Permits</h4>
+                <p>Single-family, multi-family, and renovation projects.</p>
+                <ul>
+                    <li>Building permits (additions, gut rehabs, new construction)</li>
+                    <li>Electrical, plumbing, mechanical permits</li>
+                    <li>Deck and porch permits</li>
+                    <li>Fence and landscaping permits</li>
+                    <li>Plan review coordination</li>
+                </ul>
+                <p class="pricing">$500 - $2,500 per project</p>
+            </div>
+
+            <div class="service-item">
+                <h4>Commercial Permits</h4>
+                <p>Office, retail, restaurant, and mixed-use development.</p>
+                <ul>
+                    <li>Tenant build-out permits</li>
+                    <li>Restaurant and bar permits</li>
+                    <li>Office renovation permits</li>
+                    <li>Signage permits</li>
+                    <li>Accessibility compliance</li>
+                </ul>
+                <p class="pricing">$2,000 - $5,000+ per project</p>
+            </div>
+
+            <div class="service-item">
+                <h4>Zoning & Variances</h4>
+                <p>Navigate Chicago Zoning Board of Appeals and aldermanic approval.</p>
+                <ul>
+                    <li>Zoning variance applications</li>
+                    <li>Special use permits</li>
+                    <li>Public hearing preparation</li>
+                    <li>Aldermanic notifications</li>
+                    <li>Community outreach support</li>
+                </ul>
+                <p class="pricing">$3,000 - $8,000 per application</p>
+            </div>
+
+            <div class="service-item">
+                <h4>Utility Coordination</h4>
+                <p>ComEd, Peoples Gas, water/sewer, and telecom service installations.</p>
+                <ul>
+                    <li>ComEd power upgrades and service</li>
+                    <li>Peoples Gas installations</li>
+                    <li>Water/sewer connection permits</li>
+                    <li>Telecom/fiber coordination</li>
+                    <li>CDOT street opening permits</li>
+                </ul>
+                <p class="pricing">$1,500 - $5,000 per project</p>
+            </div>
+
+            <div class="service-item">
+                <h4>Rooftop Infrastructure</h4>
+                <p>Wireless equipment, solar panels, HVAC, and rooftop improvements.</p>
+                <ul>
+                    <li>Structural engineering coordination</li>
+                    <li>Building permits for equipment</li>
+                    <li>Wireless carrier site approvals</li>
+                    <li>Solar installation permits</li>
+                    <li>Lease negotiation support</li>
+                </ul>
+                <p class="pricing">$2,000 - $6,000 per installation</p>
+            </div>
+
+            <div class="service-item">
+                <h4>Monthly Retainers</h4>
+                <p>Ongoing support for general contractors and developers with multiple projects.</p>
+                <ul>
+                    <li>Dedicated permit expediting support</li>
+                    <li>Priority response times</li>
+                    <li>Unlimited email/phone consultation</li>
+                    <li>Monthly progress reporting</li>
+                    <li>Predictable project costs</li>
+                </ul>
+                <p class="pricing">$2,000 - $5,000 per month</p>
+            </div>
+        </div>
+
+        <h3>Why Use a Permit Expediter?</h3>
+
+        <div class="comparison-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>DIY Permitting</th>
+                        <th class="highlight">With Southline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Timeline</strong></td>
+                        <td>6-12+ weeks</td>
+                        <td class="highlight">2-4 weeks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plan Review Corrections</strong></td>
+                        <td>Multiple rounds, weeks of delay</td>
+                        <td class="highlight">Pre-screened, minimal corrections</td>
+                    </tr>
+                    <tr>
+                        <td><strong>City Hall Trips</strong></td>
+                        <td>3-5+ trips, waiting in lines</td>
+                        <td class="highlight">Zero - we handle it</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Department Relationships</strong></td>
+                        <td>Cold calls, generic service</td>
+                        <td class="highlight">Direct contacts, priority attention</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cost of Delays</strong></td>
+                        <td>Labor idle, financing costs</td>
+                        <td class="highlight">Minimized downtime</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Expertise</strong></td>
+                        <td>Learning as you go</td>
+                        <td class="highlight">15+ years Chicago permitting</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Chicago Departments We Navigate</h3>
+        <ul style="padding-left: 2rem; color: var(--steel); line-height: 1.8; margin-bottom: 2rem;">
+            <li style="margin-bottom: 1rem;"><strong>Department of Buildings (DOB):</strong> Building permits, plan reviews, inspections, code compliance.</li>
+            <li style="margin-bottom: 1rem;"><strong>Department of Planning & Development (DPD):</strong> Zoning reviews, special use permits, planned developments.</li>
+            <li style="margin-bottom: 1rem;"><strong>Department of Transportation (CDOT):</strong> Street opening permits, sidewalk cafe permits, public way use.</li>
+            <li style="margin-bottom: 1rem;"><strong>Zoning Board of Appeals (ZBA):</strong> Variance applications, public hearings, zoning relief.</li>
+            <li style="margin-bottom: 1rem;"><strong>Landmarks Commission:</strong> Historic district approvals, facade changes, demolitions.</li>
+            <li style="margin-bottom: 1rem;"><strong>Ward Offices:</strong> Aldermanic notifications, community engagement, local approvals.</li>
+            <li style="margin-bottom: 1rem;"><strong>Utility Companies:</strong> ComEd, Peoples Gas, Chicago Water Department coordination.</li>
+        </ul>
+
+        <h3>Additional Services</h3>
+        
+        <h4 style="font-family: 'Oswald', sans-serif; color: var(--charcoal); font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Solar Installation Permitting</h4>
+        <p>Residential and commercial solar projects require building permits, electrical permits, ComEd interconnection approvals, and often structural engineering review. We coordinate the entire permitting process for solar installers and property owners.</p>
+        <p style="color: var(--chicago-blue); font-weight: 600; margin-bottom: 2rem;">Investment: $2,000 - $5,000 per residential project | $5,000 - $15,000 per commercial project</p>
+
+        <h4 style="font-family: 'Oswald', sans-serif; color: var(--charcoal); font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Wireless Lease Consulting</h4>
+        <p>Property owners with rooftop or ground space suitable for wireless equipment can generate $15,000-$40,000+ annually through carrier leases. We help building owners evaluate opportunities, negotiate favorable terms, and manage carrier installations.</p>
+        <p style="color: var(--chicago-blue); font-weight: 600; margin-bottom: 2rem;">Compensation: Percentage of lease value (typically 10-15% of first year revenue)</p>
+
+        <h4 style="font-family: 'Oswald', sans-serif; color: var(--charcoal); font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1rem;">Hourly Consulting</h4>
+        <p>For contractors and developers with internal project management teams who need specific expertise or guidance, we offer hourly consulting on Chicago permitting, zoning strategy, and utility coordination.</p>
+        <p style="color: var(--chicago-blue); font-weight: 600;">Rate: $100/hour</p>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Stop Waiting on Permits</h2>
+            <p>Let us handle Chicago's permitting bureaucracy while you focus on building. Contact us to discuss your project timeline.</p>
+            <a href="mailto:info@southlinedevelopment.com" class="btn">Get Your Permits Moving</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Southline Development Services | <a href="index.html">Home</a> | <a href="mailto:info@southlinedevelopment.com">Contact</a></p>
+        </div>
+    </footer>
+</body>
+</html>
