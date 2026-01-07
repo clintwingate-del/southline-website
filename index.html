@@ -3,869 +3,927 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicago Permit Expediting & Infrastructure Development | Southline Development Services</title>
-    <meta name="description" content="Expert permit expediting, data center development, and energy storage consulting in Chicago and across the Midwest. 15+ years experience with DOB, DPD, CDOT permits. Fast turnaround, transparent pricing.">
-    <meta name="keywords" content="Chicago permit expediting, building permits Chicago, DOB permits, infrastructure development, data center Chicago, battery storage Illinois, permit consultant">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://southlinedevelopment.com/">
+    <title>Southline Development | Illinois Battery Storage & Infrastructure Permitting Specialists</title>
+    <meta name="description" content="Expert battery storage permitting and site acquisition for Illinois CRGA projects. Navigate ComEd/Ameren interconnection, municipal approvals, and utility-scale energy storage development.">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Chicago Permit Expediting & Infrastructure Development | Southline Development">
-    <meta property="og:description" content="Expert permit expediting, data center development, and energy storage consulting in Chicago and the Midwest.">
-    <meta property="og:url" content="https://southlinedevelopment.com/">
-    <meta property="og:type" content="website">
-    
-    <!-- Schema.org Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Southline Development Services",
-      "@id": "https://southlinedevelopment.com",
-      "url": "https://southlinedevelopment.com",
-      "telephone": "+13125471138",
-      "email": "info@southlinedevelopment.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Chicago",
-        "addressRegion": "IL",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 41.8781,
-        "longitude": -87.6298
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Chicago"
-        },
-        {
-          "@type": "State",
-          "name": "Illinois"
-        },
-        {
-          "@type": "Place",
-          "name": "Midwest United States"
-        }
-      ],
-      "priceRange": "$$-$$$",
-      "description": "Infrastructure development and permitting services for construction, data centers, and energy storage projects in Chicagoland and the Midwest.",
-      "serviceType": [
-        "Permit Expediting",
-        "Battery Storage Permitting",
-        "Data Center Development",
-        "Zoning Consultation",
-        "Municipal Permitting",
-        "Energy Infrastructure"
-      ]
-    }
-    </script>
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L8JK8ZNFYL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-L8JK8ZNFYL');
+    </script>
+    
     <style>
         :root {
-            --charcoal: #1a1d23;
-            --chicago-blue: #003e7e;
-            --copper: #b87333;
-            --rust: #a0522d;
-            --steel: #6b7280;
-            --concrete: #e5e7eb;
-            --white: #ffffff;
+            --color-primary: #1a3a52;
+            --color-secondary: #2d5f7f;
+            --color-accent: #f97316;
+            --color-text: #1f2937;
+            --color-text-light: #6b7280;
+            --color-bg: #fafaf9;
+            --color-bg-alt: #f5f5f4;
         }
-
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Work Sans', sans-serif;
-            color: var(--charcoal);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            background: var(--white);
-            overflow-x: hidden;
+            color: var(--color-text);
+            background: #ffffff;
         }
-
+        
         /* Navigation */
         nav {
-            position: fixed;
+            background: var(--color-primary);
+            padding: 1rem 0;
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(26, 29, 35, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 1.5rem 5%;
-            border-bottom: 2px solid var(--copper);
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-
+        
         nav .container {
-            max-width: 1400px;
-            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
+        
         nav .logo {
-            font-family: 'Oswald', sans-serif;
+            color: white;
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--white);
-            letter-spacing: 1px;
+            text-decoration: none;
+            letter-spacing: 0.5px;
         }
-
-        nav .logo span {
-            color: var(--copper);
-        }
-
+        
         nav ul {
             display: flex;
-            gap: 2.5rem;
             list-style: none;
-        }
-
-        nav a {
-            color: var(--concrete);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-            letter-spacing: 0.5px;
-        }
-
-        nav a:hover {
-            color: var(--copper);
-        }
-
-        /* Mobile Menu Toggle */
-        .mobile-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-        }
-
-        .mobile-toggle span {
-            width: 25px;
-            height: 3px;
-            background: var(--white);
-            transition: 0.3s;
-        }
-
-        /* Hero Section */
-        .hero {
-            margin-top: 80px;
-            min-height: 85vh;
-            background: linear-gradient(135deg, var(--charcoal) 0%, #2d3748 100%);
-            position: relative;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(184, 115, 51, 0.03) 2px, rgba(184, 115, 51, 0.03) 4px),
-                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(184, 115, 51, 0.03) 2px, rgba(184, 115, 51, 0.03) 4px);
-            opacity: 0.5;
-        }
-
-        .hero .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 5%;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            font-family: 'Oswald', sans-serif;
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            font-weight: 700;
-            color: var(--white);
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            letter-spacing: 1px;
-            animation: slideUp 0.8s ease-out;
-        }
-
-        .hero h1 span {
-            color: var(--copper);
-            display: block;
-        }
-
-        .hero .subtitle {
-            font-size: clamp(1.1rem, 2vw, 1.4rem);
-            color: var(--concrete);
-            margin-bottom: 2rem;
-            max-width: 700px;
-            font-weight: 300;
-            animation: slideUp 0.8s ease-out 0.2s backwards;
-        }
-
-        .hero .cta-group {
-            display: flex;
-            gap: 1.5rem;
-            animation: slideUp 0.8s ease-out 0.4s backwards;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 1rem 2.5rem;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            border-radius: 2px;
-            transition: all 0.3s;
-            display: inline-block;
-            font-family: 'Work Sans', sans-serif;
-            letter-spacing: 0.5px;
-            border: 2px solid transparent;
-        }
-
-        .btn-primary {
-            background: var(--copper);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background: var(--rust);
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--white);
-            border-color: var(--white);
-        }
-
-        .btn-secondary:hover {
-            background: var(--white);
-            color: var(--charcoal);
-        }
-
-        /* Services Grid */
-        .services {
-            padding: 8rem 5%;
-            background: var(--white);
-        }
-
-        .services .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 5rem;
-        }
-
-        .section-header h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            color: var(--charcoal);
-            margin-bottom: 1rem;
-            letter-spacing: 0.5px;
-        }
-
-        .section-header p {
-            font-size: 1.2rem;
-            color: var(--steel);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-
-        .service-card {
-            background: var(--white);
-            border: 2px solid var(--concrete);
-            padding: 3rem 2.5rem;
-            transition: all 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--copper);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .service-card:hover {
-            border-color: var(--copper);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            display: block;
-        }
-
-        .service-card h3 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 1.8rem;
-            color: var(--charcoal);
-            margin-bottom: 1rem;
-            letter-spacing: 0.5px;
-        }
-
-        .service-card p {
-            color: var(--steel);
-            margin-bottom: 1.5rem;
-            line-height: 1.7;
-        }
-
-        .service-card ul {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-
-        .service-card li {
-            color: var(--steel);
-            padding-left: 1.5rem;
-            position: relative;
-            margin-bottom: 0.75rem;
-            line-height: 1.6;
-        }
-
-        .service-card li::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: var(--copper);
-            font-weight: bold;
-        }
-
-        .service-link {
-            color: var(--chicago-blue);
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: gap 0.3s;
-        }
-
-        .service-link:hover {
-            gap: 1rem;
-            color: var(--copper);
-        }
-
-        /* Expertise Section */
-        .expertise {
-            padding: 8rem 5%;
-            background: linear-gradient(135deg, var(--charcoal) 0%, #2d3748 100%);
-            position: relative;
-        }
-
-        .expertise::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(184, 115, 51, 0.02) 10px, rgba(184, 115, 51, 0.02) 20px);
-            opacity: 0.5;
-        }
-
-        .expertise .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .expertise h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            color: var(--white);
-            margin-bottom: 1rem;
-            letter-spacing: 0.5px;
-        }
-
-        .expertise .subtitle {
-            font-size: 1.2rem;
-            color: var(--concrete);
-            margin-bottom: 4rem;
-        }
-
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
-
-        .expertise-item {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
-            border-left: 3px solid var(--copper);
-            backdrop-filter: blur(10px);
-        }
-
-        .expertise-item h4 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 1.3rem;
-            color: var(--copper);
-            margin-bottom: 0.5rem;
-            letter-spacing: 0.5px;
-        }
-
-        .expertise-item p {
-            color: var(--concrete);
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 8rem 5%;
-            background: var(--white);
-            text-align: center;
-        }
-
-        .cta-section .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .cta-section h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: clamp(2rem, 4vw, 3.5rem);
-            color: var(--charcoal);
-            margin-bottom: 1.5rem;
-            letter-spacing: 0.5px;
-        }
-
-        .cta-section p {
-            font-size: 1.2rem;
-            color: var(--steel);
-            margin-bottom: 3rem;
-            line-height: 1.7;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-            margin-top: 3rem;
-        }
-
-        .contact-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .contact-item .label {
-            font-size: 0.9rem;
-            color: var(--steel);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .contact-item .value {
-            font-size: 1.1rem;
-            color: var(--chicago-blue);
-            font-weight: 600;
-        }
-
-        .contact-item .value a {
-            color: var(--chicago-blue);
+        
+        nav a {
+            color: white;
             text-decoration: none;
-        }
-
-        .contact-item .value a:hover {
-            color: var(--copper);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--charcoal);
-            color: var(--concrete);
-            padding: 3rem 5%;
-            border-top: 2px solid var(--copper);
-        }
-
-        footer .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-        }
-
-        footer h4 {
-            font-family: 'Oswald', sans-serif;
-            color: var(--white);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-            letter-spacing: 0.5px;
-        }
-
-        footer p, footer li {
-            color: var(--steel);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        footer ul {
-            list-style: none;
-        }
-
-        footer ul li {
-            margin-bottom: 0.75rem;
-        }
-
-        footer a {
-            color: var(--steel);
-            text-decoration: none;
+            font-weight: 500;
             transition: color 0.3s;
         }
-
-        footer a:hover {
-            color: var(--copper);
+        
+        nav a:hover {
+            color: var(--color-accent);
         }
-
-        .copyright {
-            text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--steel);
-            font-size: 0.9rem;
+        
+        .nav-cta {
+            background: var(--color-accent);
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
         }
-
-        /* FAQ Section */
-        .faq-section {
-            padding: 8rem 5%;
-            background: var(--white);
+        
+        .nav-cta:hover {
+            color: white !important;
+            opacity: 0.9;
         }
-
-        .faq-section .container {
-            max-width: 1000px;
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem;
         }
-
-        .faq-section h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: clamp(2rem, 4vw, 3rem);
-            color: var(--charcoal);
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.75rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-family: 'Fraunces', Georgia, serif;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            background: var(--color-accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--color-accent);
+        }
+        
+        .cta-button:hover {
+            background: #ea580c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+        }
+        
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid white;
+        }
+        
+        .cta-secondary:hover {
+            background: white;
+            color: var(--color-primary);
+        }
+        
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-box {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Section */
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .bg-alt {
+            background: var(--color-bg);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+            font-family: 'Fraunces', Georgia, serif;
+        }
+        
+        /* CRGA Feature Banner */
+        .crga-banner {
+            background: linear-gradient(135deg, #1a3a52 0%, #2d5f7f 100%);
+            padding: 2.5rem;
+            border-radius: 12px;
             margin-bottom: 3rem;
             text-align: center;
-            letter-spacing: 0.5px;
+            border: 3px solid var(--color-accent);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
-
-        .faq-item {
-            margin-bottom: 2rem;
-            border-bottom: 1px solid var(--concrete);
-            padding-bottom: 2rem;
+        
+        .crga-banner-icon {
+            font-size: 3rem;
+            margin-bottom: 0.75rem;
         }
-
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-
-        .faq-item h3 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 1.5rem;
-            color: var(--chicago-blue);
+        
+        .crga-banner h3 {
+            color: #ffffff;
+            font-size: 1.75rem;
             margin-bottom: 1rem;
-            letter-spacing: 0.5px;
+            font-family: 'Fraunces', Georgia, serif;
         }
-
-        .faq-item p {
-            color: var(--steel);
+        
+        .crga-banner p {
+            color: #e5e7eb;
             font-size: 1.1rem;
-            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
         }
-
-        /* Animations */
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
         }
-
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #e5e7eb;
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        
+        .service-card.featured {
+            border: 2px solid var(--color-accent);
+            background: linear-gradient(to bottom, #fff9f5 0%, #ffffff 100%);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--color-accent);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-primary);
+        }
+        
+        .service-price {
+            color: var(--color-accent);
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-top: 1.25rem;
+        }
+        
+        .service-features li {
+            padding: 0.5rem 0;
+            padding-left: 1.75rem;
+            position: relative;
+            color: var(--color-text);
+        }
+        
+        .service-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: bold;
+        }
+        
+        /* Download Box */
+        .download-box {
+            background: linear-gradient(135deg, #f5f5f4 0%, #ffffff 100%);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid var(--color-accent);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        
+        .download-box h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+        
+        .download-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .download-form input {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.875rem;
+            border: 2px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        /* Case Studies */
+        .case-study {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            border-left: 4px solid var(--color-accent);
+        }
+        
+        .case-study-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .case-study h3 {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .case-study-tag {
+            background: var(--color-bg);
+            padding: 0.375rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            color: var(--color-text-light);
+            font-weight: 600;
+        }
+        
+        .case-study-result {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            padding: 1.25rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 3px solid #22c55e;
+        }
+        
+        .case-study-result strong {
+            color: #15803d;
+            font-size: 1.1rem;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .stat-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+        }
+        
+        .contact-item-icon {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--charcoal);
-                flex-direction: column;
-                padding: 2rem;
-                gap: 1.5rem;
+            .hero h1 {
+                font-size: 2rem;
             }
-
-            nav ul.active {
-                display: flex;
-            }
-
-            .mobile-toggle {
-                display: flex;
-            }
-
-            .hero .cta-group {
-                flex-direction: column;
-            }
-
+            
             .services-grid {
                 grid-template-columns: 1fr;
             }
-
-            .contact-info {
-                gap: 2rem;
+            
+            .about-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">SOUTHLINE<span>.</span></div>
-            <div class="mobile-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="#" class="logo">SOUTHLINE</a>
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#expertise">Expertise</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>
-                Building Chicagoland's
-                <span>Infrastructure Future</span>
-            </h1>
-            <p class="subtitle">
-                Site acquisition, permitting, and development expertise for construction, data center, and energy storage projects across Chicagoland and the Midwest.
-            </p>
-            <div class="cta-group">
-                <a href="#contact" class="btn btn-primary">Start a Project</a>
-                <a href="#services" class="btn btn-secondary">Our Services</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Infrastructure Development Services</h2>
-                <p>Specialized expertise across three critical infrastructure sectors</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <span class="service-icon">⚡</span>
-                    <h3>Energy Infrastructure</h3>
-                    <p>Battery storage and renewable energy project development under Illinois's Clean and Reliable Grid Affordability Act.</p>
-                    <ul>
-                        <li>Battery storage site feasibility and permitting</li>
-                        <li>Solar + storage project coordination</li>
-                        <li>ComEd/Ameren interconnection support</li>
-                        <li>Municipal approvals and community engagement</li>
-                        <li>Utility-scale and commercial storage projects</li>
-                    </ul>
-                    <a href="energy-infrastructure.html" class="service-link">Learn More →</a>
+            <div class="hero-content">
+                <h1>Illinois Battery Storage Permitting & Site Acquisition Specialists</h1>
+                <p>Navigate CRGA requirements, secure ComEd/Ameren interconnection, and accelerate municipal approvals for utility-scale energy storage projects across Illinois.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Schedule Consultation</a>
+                    <a href="#crga-guide" class="cta-button cta-secondary">Download CRGA Guide</a>
                 </div>
-
-                <div class="service-card">
-                    <span class="service-icon">🏢</span>
-                    <h3>Data Center Development</h3>
-                    <p>Site selection and infrastructure preparation for data center projects in the Chicagoland market.</p>
-                    <ul>
-                        <li>Site feasibility studies and power capacity analysis</li>
-                        <li>Fiber connectivity assessment</li>
-                        <li>Zoning and permitting roadmaps</li>
-                        <li>Utility coordination and upgrades</li>
-                        <li>Build-ready site preparation</li>
-                    </ul>
-                    <a href="data-center.html" class="service-link">Learn More →</a>
-                </div>
-
-                <div class="service-card">
-                    <span class="service-icon">🏗️</span>
-                    <h3>Building & Development</h3>
-                    <p>Permit expediting and project coordination for construction projects throughout Chicagoland.</p>
-                    <ul>
-                        <li>Permit expediting (DOB, DPD, CDOT)</li>
-                        <li>Zoning variance applications</li>
-                        <li>Utility coordination and approvals</li>
-                        <li>Rooftop infrastructure consulting</li>
-                        <li>Solar installation permitting</li>
-                    </ul>
-                    <a href="building-development.html" class="service-link">Learn More →</a>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-number">$280M+</div>
+                        <div>Illinois CRGA Funding</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3,000 MW</div>
+                        <div>State Storage Target by 2030</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">15+ Years</div>
+                        <div>Infrastructure Experience</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="expertise" class="expertise">
+    <!-- Services Section -->
+    <section id="services" class="section">
         <div class="container">
-            <h2>15+ Years Infrastructure Expertise</h2>
-            <p class="subtitle">Deep experience navigating complex permitting, utility coordination, and site development across multiple infrastructure sectors.</p>
-            <div class="expertise-grid">
-                <div class="expertise-item">
-                    <h4>Chicagoland Permitting</h4>
-                    <p>Extensive relationships with DOB, DPD, CDOT, ward offices, and municipal departments across Chicago and suburbs. Expert navigation of complex approval processes.</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Utility Coordination</h4>
-                    <p>ComEd, Ameren, Peoples Gas, and telecom coordination. Power capacity analysis and interconnection support for high-demand projects.</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Real Estate Development</h4>
-                    <p>Site acquisition, lease negotiations, and landlord/developer coordination. Experience across telecom, energy, and commercial infrastructure.</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Energy Infrastructure</h4>
-                    <p>bp pulse EV charging infrastructure background. Illinois Clean Grid Act expertise. Solar and battery storage project knowledge.</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Data Center Infrastructure</h4>
-                    <p>Power capacity planning, fiber connectivity evaluation, and site development for data center projects. Understanding of PUE, redundancy, and uptime requirements.</p>
-                </div>
-                <div class="expertise-item">
-                    <h4>Project Management</h4>
-                    <p>End-to-end project coordination from feasibility through completion. Multi-stakeholder management and timeline optimization.</p>
-                </div>
+            <!-- CRGA Feature Banner -->
+            <div class="crga-banner">
+                <div class="crga-banner-icon">🔋</div>
+                <h3>Illinois Clean and Reliable Grid Affordability Act (CRGA) Specialists</h3>
+                <p>With Illinois targeting 3,000 MW of battery storage by 2030 and $280M+ in available funding, developers need experienced partners to navigate complex permitting, utility interconnection, and municipal approvals. We specialize in accelerating Illinois energy storage projects from feasibility through commercial operation.</p>
+                <a href="#crga-guide" class="cta-button">Get Free CRGA Permitting Guide →</a>
             </div>
-        </div>
-    </section>
-
-    <section class="faq-section">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
             
-            <div class="faq-item">
-                <h3>What services does Southline Development provide?</h3>
-                <p>We specialize in three areas: (1) Building permit expediting for Chicago and suburban construction projects, (2) Data center site development and feasibility studies, and (3) Battery storage and energy infrastructure permitting under Illinois's Clean Grid Act (CRGA). All services include full municipal permitting, utility coordination, and project management support.</p>
+            <div class="text-center">
+                <h2>Battery Storage Development Services</h2>
+                <p style="max-width: 800px; margin: 0 auto; color: var(--color-text-light); font-size: 1.1rem;">Comprehensive support for utility-scale, C&I, and community solar + storage projects across Illinois</p>
             </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card featured">
+                    <div class="featured-badge">CRGA SPECIALIST</div>
+                    <div class="service-icon">⚡</div>
+                    <h3>Utility-Scale Battery Storage</h3>
+                    <p class="service-price">Starting at $15,000</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>1+ MW projects | Full development support</em></p>
+                    <p>Turn-key permitting and site acquisition for utility-scale battery storage projects under Illinois CRGA.</p>
+                    <ul class="service-features">
+                        <li>CRGA Coal-to-Solar Grant navigation ($110K/MW)</li>
+                        <li>ComEd/Ameren interconnection coordination</li>
+                        <li>Municipal special use permits & zoning</li>
+                        <li>Fire marshal approval (NFPA 855 compliance)</li>
+                        <li>Community engagement & stakeholder management</li>
+                        <li>Site feasibility & substation proximity analysis</li>
+                    </ul>
+                </div>
 
-            <div class="faq-item">
-                <h3>What areas do you serve?</h3>
-                <p>We serve Chicago, all Chicagoland suburbs (including Evanston, Oak Park, Naperville, Elk Grove Village, Aurora, Joliet, and Schaumburg), and projects throughout Illinois and the Midwest. Our deep relationships with Chicago DOB, DPD, CDOT, and suburban building departments enable faster approvals across the region.</p>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">🌞</div>
+                    <h3>Solar + Storage Projects</h3>
+                    <p class="service-price">Starting at $12,000</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Community solar, commercial installations</em></p>
+                    <p>Add battery storage to solar projects to maximize CRGA incentives and grid value.</p>
+                    <ul class="service-features">
+                        <li>Illinois Shines program coordination</li>
+                        <li>DG Rebate application support</li>
+                        <li>Virtual Power Plant (VPP) program enrollment</li>
+                        <li>Combined solar + storage permitting</li>
+                        <li>Interconnection queue management</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>C&I Battery Storage</h3>
+                    <p class="service-price">Starting at $8,000</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Commercial & industrial behind-the-meter</em></p>
+                    <p>Peak shaving, demand charge reduction, and backup power for commercial facilities.</p>
+                    <ul class="service-features">
+                        <li>Building permit & fire code compliance</li>
+                        <li>Utility rate analysis & optimization</li>
+                        <li>VPP program participation support</li>
+                        <li>Site electrical capacity assessment</li>
+                        <li>Vendor coordination & project management</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">📍</div>
+                    <h3>Site Identification & Feasibility</h3>
+                    <p class="service-price">Starting at $5,000</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Pre-development site analysis</em></p>
+                    <p>Identify optimal battery storage sites before committing capital to permitting and development.</p>
+                    <ul class="service-features">
+                        <li>Substation proximity & capacity analysis</li>
+                        <li>Zoning & land use pre-screening</li>
+                        <li>Preliminary interconnection assessment</li>
+                        <li>Environmental constraints review</li>
+                        <li>Site ranking & comparative analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Project Rescue & Remediation</h3>
+                    <p class="service-price">Custom Pricing</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Stuck permits, community opposition</em></p>
+                    <p>Get stalled energy storage projects back on track with expert troubleshooting.</p>
+                    <ul class="service-features">
+                        <li>Permit denial analysis & appeal strategy</li>
+                        <li>Community opposition mitigation</li>
+                        <li>Interconnection queue issue resolution</li>
+                        <li>Alternative site/approach development</li>
+                        <li>Timeline recovery planning</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Infrastructure Due Diligence</h3>
+                    <p class="service-price">Starting at $10,000</p>
+                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>For investors & developers</em></p>
+                    <p>Assess infrastructure risks and opportunities before property or portfolio acquisition.</p>
+                    <ul class="service-features">
+                        <li>Existing infrastructure audit</li>
+                        <li>Battery storage development potential</li>
+                        <li>Solar + storage feasibility</li>
+                        <li>Regulatory compliance assessment</li>
+                        <li>Investment-grade reporting</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="faq-item">
-                <h3>How much do your services cost?</h3>
-                <p>Pricing varies by project complexity: Building permit expediting ranges from $500-$5,000 per project. Data center feasibility studies start at $5,000. Battery storage permitting ranges from $8,000-$30,000. We provide transparent, upfront pricing with no hidden fees. Contact us for a detailed quote based on your specific project.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>How long does the permitting process take?</h3>
-                <p>With our expediting services, most Chicago building permits are pulled in 2-4 weeks compared to 6-12 weeks for DIY applications. Data center and energy storage projects typically take 3-6 months from feasibility through final approvals, depending on municipal complexity and utility coordination requirements.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Do you work with Chicago Department of Buildings (DOB)?</h3>
-                <p>Yes, we have extensive experience and established relationships with Chicago DOB, Department of Planning & Development (DPD), and CDOT. We handle all application submissions, plan reviews, corrections, and inspections on your behalf, navigating the bureaucracy so you don't have to.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Can you help with Illinois battery storage projects?</h3>
-                <p>Absolutely. We specialize in navigating the Illinois Clean and Reliable Grid Affordability Act (CRGA) requirements, including ComEd and Ameren interconnection approvals, municipal special use permits, fire marshal coordination (NFPA 855), and IEPA environmental compliance. Illinois is targeting 3,000 MW of storage by 2030, creating significant opportunity.</p>
+            
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--color-bg); border-radius: 12px;">
+                <p style="font-size: 1.1rem; color: var(--color-text);"><strong>Multi-Site Projects & Large Portfolios:</strong> Volume discounts available for developers with multiple Illinois sites. Custom scoping for 10+ project pipelines.</p>
+                <a href="#contact" style="display: inline-block; margin-top: 1rem; color: var(--color-accent); text-decoration: none; font-weight: 600;">Discuss Your Portfolio →</a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="cta-section">
+    <!-- Download Section -->
+    <section id="crga-guide" class="section bg-alt">
         <div class="container">
-            <h2>Ready to Move Your Project Forward?</h2>
-            <p>Whether you're navigating Chicagoland permitting, evaluating a data center site, or developing energy storage infrastructure, we provide the expertise to accelerate your timeline.</p>
-            <a href="mailto:info@southlinedevelopment.com" class="btn btn-primary">Get In Touch</a>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="label">Email</span>
-                    <span class="value"><a href="mailto:info@southlinedevelopment.com">info@southlinedevelopment.com</a></span>
+            <div class="download-box">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔋</div>
+                <h3>Free Download: Illinois Battery Storage Permitting Guide</h3>
+                <p style="max-width: 700px; margin: 0 auto; margin-bottom: 1.5rem;">Navigate CRGA requirements, funding opportunities, and approval processes for energy storage projects. Includes permitting checklists, timeline expectations, and strategic site selection criteria.</p>
+                <form class="download-form" name="battery-download" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?battery-download=true">
+                    <input type="hidden" name="form-name" value="battery-download">
+                    <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button">Download Guide</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Battery Storage Project Experience</h2>
+                <p style="max-width: 800px; margin: 0 auto; color: var(--color-text-light); font-size: 1.1rem;">Real projects. Real outcomes. Real timeline compression.</p>
+            </div>
+            
+            <div style="margin-top: 3rem;">
+                <!-- Case Study 1 -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div>
+                            <h3>Midwest Utility-Scale Battery Storage Project</h3>
+                            <div class="case-study-tag">50 MW Battery Storage</div>
+                        </div>
+                    </div>
+                    <p><strong>Challenge:</strong> Solar developer needed to add 50 MW battery storage to qualify for Illinois CRGA Coal-to-Solar Grant Program ($5.5M potential grant). Project faced complex ComEd interconnection requirements and municipal permitting in jurisdiction with no prior energy storage approvals.</p>
+                    <div class="case-study-result">
+                        <strong>Result:</strong> Secured special use permit in 7 months • Navigated ComEd interconnection queue • Positioned for $5.5M CRGA grant award
+                    </div>
+                    <p><strong>Solution:</strong> Developed comprehensive municipal education strategy on battery storage safety, coordinated early ComEd system impact study, prepared NFPA 855-compliant fire safety plans, and structured grant application timeline to align with municipal approval process.</p>
                 </div>
-                <div class="contact-item">
-                    <span class="label">Phone</span>
-                    <span class="value"><a href="tel:3125471138">(312) 547-1138</a></span>
+
+                <!-- Case Study 2 -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div>
+                            <h3>Community Solar + Storage Permitting</h3>
+                            <div class="case-study-tag">Illinois Shines Project</div>
+                        </div>
+                    </div>
+                    <p><strong>Challenge:</strong> Community solar developer wanted to add battery storage to 2 MW solar project to increase project value and qualify for additional CRGA incentives. Needed to navigate both Illinois Shines program requirements and local zoning for storage component.</p>
+                    <div class="case-study-result">
+                        <strong>Result:</strong> Approved as accessory use (no additional permits required) • Qualified for DG Rebate + VPP enrollment • 4 months total timeline
+                    </div>
+                    <p><strong>Solution:</strong> Positioned battery storage as "accessory use" to approved solar farm, eliminating need for separate special use permit. Coordinated Illinois Power Agency approval for combined solar+storage project and facilitated VPP program enrollment for ongoing revenue stream.</p>
                 </div>
-                <div class="contact-item">
-                    <span class="label">Location</span>
-                    <span class="value">Chicagoland & Midwest</span>
+
+                <!-- Case Study 3 -->
+                <div class="case-study">
+                    <div class="case-study-header">
+                        <div>
+                            <h3>Commercial Warehouse Peak Shaving Installation</h3>
+                            <div class="case-study-tag">C&I Battery Storage</div>
+                        </div>
+                    </div>
+                    <p><strong>Challenge:</strong> 500,000 sq ft industrial warehouse faced $15,000+/month demand charges. Owner wanted to install 500 kW/2 MWh battery system but needed to navigate complex fire code requirements and utility coordination.</p>
+                    <div class="case-study-result">
+                        <strong>Result:</strong> Building permit approved in 6 weeks • Fire marshal sign-off achieved • Projected $120K annual savings on demand charges
+                    </div>
+                    <p><strong>Solution:</strong> Prepared NFPA 855 compliant fire safety documentation, coordinated fire department pre-installation walkthrough, managed ComEd interconnection notification, and structured system to qualify for future VPP program participation.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="section bg-alt">
+        <div class="container">
+            <div class="about-content">
+                <div>
+                    <h2>Deep Illinois Energy Infrastructure Expertise</h2>
+                    <p style="margin-bottom: 1.5rem;">Over 15 years navigating the complex intersection of energy infrastructure, utility coordination, and municipal regulation across Illinois and the Midwest. Specialized focus on emerging battery storage market created by Illinois CRGA legislation.</p>
+                    
+                    <p style="font-weight: 600; margin-bottom: 1rem; color: var(--color-primary);">Core Expertise:</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            Battery storage permitting (utility-scale, C&I, community solar+storage)
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            ComEd & Ameren interconnection navigation
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            CRGA funding program expertise (Coal-to-Solar, DG Rebate, VPP)
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            Illinois municipal permitting (Chicago metro & statewide)
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            Fire safety compliance (NFPA 855, fire marshal coordination)
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            Solar + storage hybrid project development
+                        </li>
+                    </ul>
+                    
+                    <p style="margin-top: 1.5rem;"><strong>Currently advising battery storage developers, solar+storage projects, and C&I facility owners across Illinois pursuing CRGA-related opportunities.</strong></p>
+                    
+                    <p style="margin-top: 1rem;"><em>Independent advisory—no equipment sales, no development conflicts. Recommendations based solely on project feasibility, regulatory compliance, and commercial viability.</em></p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">$280M+</div>
+                        <div>CRGA Funding Pool</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3,000 MW</div>
+                        <div>Illinois Storage Target</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">15+</div>
+                        <div>Years Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2026-2030</div>
+                        <div>CRGA Timeline</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Discuss Your Illinois Battery Storage Project</h2>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--color-text-light); font-size: 1.1rem;">Whether you're planning utility-scale deployment, adding storage to solar projects, or evaluating C&I opportunities—we provide clarity on CRGA requirements and approval timelines.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Get In Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:info@southlinedevelopment.com" style="color: var(--color-accent); text-decoration: none;">info@southlinedevelopment.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:3125471138" style="color: var(--color-accent); text-decoration: none;">(312) 547-1138</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div>
+                            <strong>Service Area</strong><br>
+                            Illinois Statewide<br>
+                            <span style="color: var(--color-text-light); font-size: 0.9rem;">ComEd & Ameren Territories</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?success=true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+                        
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Project Type *</label>
+                            <select name="project-type" required>
+                                <option value="">Select...</option>
+                                <option value="utility-scale">Utility-Scale Battery Storage (1+ MW)</option>
+                                <option value="solar-storage">Solar + Storage Project</option>
+                                <option value="ci-storage">C&I Battery Storage</option>
+                                <option value="site-feasibility">Site Identification & Feasibility</option>
+                                <option value="project-rescue">Project Rescue / Stuck Permit</option>
+                                <option value="due-diligence">Infrastructure Due Diligence</option>
+                                <option value="other">Other Energy Storage Project</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Project Details</label>
+                            <textarea name="project-details" placeholder="Project location, capacity, current stage, timeline, etc."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button" style="width: 100%;">Request Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div>
-                <h4>Southline Development Services</h4>
-                <p>Infrastructure development and permitting expertise for Chicagoland and Midwest projects.</p>
-            </div>
-            <div>
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="energy-infrastructure.html">Energy Infrastructure</a></li>
-                    <li><a href="data-center.html">Data Center Development</a></li>
-                    <li><a href="building-development.html">Building & Development</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="mailto:info@southlinedevelopment.com">info@southlinedevelopment.com</a></li>
-                    <li><a href="tel:3125471138">(312) 547-1138</a></li>
-                    <li>Chicagoland & Midwest</li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright">
-            © 2025 Southline Development Services. All rights reserved.
+            <p>&copy; 2025 Southline Development Services. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.875rem;">Illinois battery storage permitting, CRGA compliance, and energy infrastructure development services.</p>
         </div>
     </footer>
+
+    <script>
+        // Show success message after form submission
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            if (urlParams.get('success') === 'true') {
+                alert('Thank you for your inquiry! We\'ll be in touch within 24 hours to schedule your free consultation.');
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+            
+            if (urlParams.get('battery-download') === 'true') {
+                alert('Thank you! Check your email for the Illinois Battery Storage Permitting Guide download link.');
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
