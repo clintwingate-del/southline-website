@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Southline Development | Illinois Battery Storage & Infrastructure Permitting Specialists</title>
-    <meta name="description" content="Expert battery storage permitting and site acquisition for Illinois CRGA projects. Navigate ComEd/Ameren interconnection, municipal approvals, and utility-scale energy storage development.">
+    
+    <!-- Primary Meta Tags -->
+    <title>Illinois Solar & Battery Storage Permitting | CRGA Specialists | Southline Development</title>
+    <meta name="title" content="Illinois Solar & Battery Storage Permitting | CRGA Specialists | Southline Development">
+    <meta name="description" content="Expert Illinois solar and battery storage development services. Navigate CRGA funding, ComEd/Ameren interconnection, and municipal approvals for solar + storage projects. Serving Chicago, Aurora, Naperville & statewide.">
+    <meta name="keywords" content="Illinois battery storage, Illinois solar permitting, CRGA funding, solar plus storage Illinois, ComEd interconnection, Ameren solar, Illinois Shines program, battery storage permitting, Chicago solar development, utility scale solar Illinois">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://southlinedevelopment.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://southlinedevelopment.com/">
+    <meta property="og:title" content="Illinois Solar & Battery Storage Development Specialists">
+    <meta property="og:description" content="Navigate CRGA requirements, secure funding, and accelerate approvals for solar, battery storage, and hybrid energy projects across Illinois.">
+    <meta property="og:image" content="https://southlinedevelopment.com/android-chrome-192x192.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://southlinedevelopment.com/">
+    <meta property="twitter:title" content="Illinois Solar & Battery Storage Development Specialists">
+    <meta property="twitter:description" content="Navigate CRGA requirements, secure funding, and accelerate approvals for solar, battery storage, and hybrid energy projects across Illinois.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -18,6 +38,54 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-L8JK8ZNFYL');
+    </script>
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Southline Development Services",
+      "description": "Illinois solar and battery storage development, permitting, and site acquisition specialists. Expert CRGA compliance and utility coordination.",
+      "url": "https://southlinedevelopment.com",
+      "telephone": "+1-312-547-1138",
+      "email": "info@southlinedevelopment.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Illinois"
+      },
+      "serviceType": [
+        "Battery Storage Permitting",
+        "Solar Development",
+        "Solar Plus Storage Projects",
+        "CRGA Compliance",
+        "Utility Interconnection",
+        "Energy Infrastructure Due Diligence"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Battery Storage Permitting",
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "Southline Development Services"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Illinois"
+      },
+      "description": "Utility-scale and C&I battery storage permitting services for Illinois CRGA projects including ComEd and Ameren interconnection coordination."
+    }
     </script>
     
     <style>
@@ -115,14 +183,13 @@
             font-size: 2.75rem;
             margin-bottom: 1.5rem;
             line-height: 1.2;
-            font-family: 'Fraunces', Georgia, serif;
         }
         
         .hero p {
             font-size: 1.25rem;
             margin-bottom: 2.5rem;
             opacity: 0.95;
-            max-width: 800px;
+            max-width: 850px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -199,7 +266,10 @@
             font-size: 2.25rem;
             margin-bottom: 1rem;
             color: var(--color-primary);
-            font-family: 'Fraunces', Georgia, serif;
+        }
+        
+        h3 {
+            color: var(--color-primary);
         }
         
         /* CRGA Feature Banner */
@@ -222,7 +292,6 @@
             color: #ffffff;
             font-size: 1.75rem;
             margin-bottom: 1rem;
-            font-family: 'Fraunces', Georgia, serif;
         }
         
         .crga-banner p {
@@ -287,11 +356,22 @@
             color: var(--color-primary);
         }
         
+        .service-subtitle {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
         .service-price {
             color: var(--color-accent);
             font-weight: 700;
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: #fff7ed;
+            border-radius: 6px;
+            text-align: center;
         }
         
         .service-features {
@@ -406,16 +486,36 @@
         
         .about-stats {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 1.5rem;
         }
         
-        .stat-box {
+        .about-stat-box {
             background: white;
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.06);
             text-align: center;
+        }
+        
+        /* Location Section */
+        .locations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .location-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        .location-card h4 {
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
         }
         
         /* Contact Section */
@@ -508,7 +608,7 @@
             <a href="#" class="logo">SOUTHLINE</a>
             <ul>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#case-studies">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
@@ -519,10 +619,10 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Illinois Battery Storage Permitting & Site Acquisition Specialists</h1>
-                <p>Navigate CRGA requirements, secure ComEd/Ameren interconnection, and accelerate municipal approvals for utility-scale energy storage projects across Illinois.</p>
+                <h1>Illinois Solar & Battery Storage Development Specialists</h1>
+                <p>Navigate CRGA requirements, secure funding, and accelerate approvals for solar, battery storage, and hybrid energy projects across Illinois. Expert ComEd and Ameren interconnection coordination.</p>
                 <div class="hero-cta">
-                    <a href="#contact" class="cta-button">Schedule Consultation</a>
+                    <a href="#contact" class="cta-button">Schedule Free Consultation</a>
                     <a href="#crga-guide" class="cta-button cta-secondary">Download CRGA Guide</a>
                 </div>
                 <div class="stats">
@@ -532,7 +632,7 @@
                     </div>
                     <div class="stat-box">
                         <div class="stat-number">3,000 MW</div>
-                        <div>State Storage Target by 2030</div>
+                        <div>Battery Storage Target by 2030</div>
                     </div>
                     <div class="stat-box">
                         <div class="stat-number">15+ Years</div>
@@ -550,118 +650,131 @@
             <div class="crga-banner">
                 <div class="crga-banner-icon">🔋</div>
                 <h3>Illinois Clean and Reliable Grid Affordability Act (CRGA) Specialists</h3>
-                <p>With Illinois targeting 3,000 MW of battery storage by 2030 and $280M+ in available funding, developers need experienced partners to navigate complex permitting, utility interconnection, and municipal approvals. We specialize in accelerating Illinois energy storage projects from feasibility through commercial operation.</p>
+                <p>With Illinois targeting 3,000 MW of battery storage by 2030 and $280M+ in available funding, solar and battery storage developers need experienced partners to navigate complex permitting, utility interconnection, and municipal approvals. We specialize in accelerating Illinois energy storage and solar+storage projects from feasibility through commercial operation.</p>
                 <a href="#crga-guide" class="cta-button">Get Free CRGA Permitting Guide →</a>
             </div>
             
             <div class="text-center">
-                <h2>Battery Storage Development Services</h2>
-                <p style="max-width: 800px; margin: 0 auto; color: var(--color-text-light); font-size: 1.1rem;">Comprehensive support for utility-scale, C&I, and community solar + storage projects across Illinois</p>
+                <h2>Illinois Solar & Battery Storage Services</h2>
+                <p style="max-width: 850px; margin: 0 auto; color: var(--color-text-light); font-size: 1.1rem;">Comprehensive development support for utility-scale, community solar, C&I, and hybrid solar+storage projects across Illinois</p>
             </div>
             
             <div class="services-grid">
-                <!-- Service 1 -->
+                <!-- Service 1: Solar + Storage -->
+                <div class="service-card featured">
+                    <div class="featured-badge">FEATURED</div>
+                    <div class="service-icon">⚡</div>
+                    <h3>Solar + Battery Storage Projects</h3>
+                    <p class="service-subtitle">Hybrid solar and storage development</p>
+                    <div class="service-price">Custom Pricing Based on Project Scope</div>
+                    <p>Maximize CRGA and Illinois Shines incentives with combined solar and battery storage development. We handle coordinated permitting for hybrid projects.</p>
+                    <ul class="service-features">
+                        <li>Illinois Shines + CRGA funding stack optimization</li>
+                        <li>Combined solar + storage municipal permitting</li>
+                        <li>ComEd/Ameren interconnection for hybrid systems</li>
+                        <li>Community solar with battery component</li>
+                        <li>C&I solar + peak shaving storage coordination</li>
+                        <li>Virtual Power Plant (VPP) program enrollment</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: Utility-Scale Battery Storage -->
                 <div class="service-card featured">
                     <div class="featured-badge">CRGA SPECIALIST</div>
-                    <div class="service-icon">⚡</div>
+                    <div class="service-icon">🔋</div>
                     <h3>Utility-Scale Battery Storage</h3>
-                    <p class="service-price">Starting at $15,000</p>
-                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>1+ MW projects | Full development support</em></p>
-                    <p>Turn-key permitting and site acquisition for utility-scale battery storage projects under Illinois CRGA.</p>
+                    <p class="service-subtitle">1+ MW projects | Full CRGA compliance</p>
+                    <div class="service-price">Custom Pricing Based on Project Scope</div>
+                    <p>Turn-key permitting and site acquisition for utility-scale battery storage projects under Illinois CRGA legislation.</p>
                     <ul class="service-features">
                         <li>CRGA Coal-to-Solar Grant navigation ($110K/MW)</li>
                         <li>ComEd/Ameren interconnection coordination</li>
-                        <li>Municipal special use permits & zoning</li>
+                        <li>Municipal special use permits & zoning approvals</li>
                         <li>Fire marshal approval (NFPA 855 compliance)</li>
                         <li>Community engagement & stakeholder management</li>
-                        <li>Site feasibility & substation proximity analysis</li>
+                        <li>Substation proximity & capacity analysis</li>
                     </ul>
                 </div>
 
-                <!-- Service 2 -->
+                <!-- Service 3: Solar Development -->
                 <div class="service-card">
-                    <div class="service-icon">🌞</div>
-                    <h3>Solar + Storage Projects</h3>
-                    <p class="service-price">Starting at $12,000</p>
-                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Community solar, commercial installations</em></p>
-                    <p>Add battery storage to solar projects to maximize CRGA incentives and grid value.</p>
+                    <div class="service-icon">☀️</div>
+                    <h3>Solar Project Development</h3>
+                    <p class="service-subtitle">Utility-scale, community solar, C&I installations</p>
+                    <div class="service-price">Custom Pricing Based on Project Scope</div>
+                    <p>Expert solar development services for Illinois Shines projects, community solar, and commercial installations across Illinois.</p>
                     <ul class="service-features">
-                        <li>Illinois Shines program coordination</li>
-                        <li>DG Rebate application support</li>
-                        <li>Virtual Power Plant (VPP) program enrollment</li>
-                        <li>Combined solar + storage permitting</li>
-                        <li>Interconnection queue management</li>
+                        <li>Illinois Shines program navigation & approvals</li>
+                        <li>Community solar development & permitting</li>
+                        <li>Commercial & industrial rooftop solar</li>
+                        <li>Utility-scale solar farm site acquisition</li>
+                        <li>Municipal zoning & special use permits</li>
+                        <li>ComEd/Ameren solar interconnection</li>
                     </ul>
                 </div>
 
-                <!-- Service 3 -->
+                <!-- Service 4: C&I Battery Storage -->
                 <div class="service-card">
                     <div class="service-icon">🏢</div>
-                    <h3>C&I Battery Storage</h3>
-                    <p class="service-price">Starting at $8,000</p>
-                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Commercial & industrial behind-the-meter</em></p>
-                    <p>Peak shaving, demand charge reduction, and backup power for commercial facilities.</p>
+                    <h3>Commercial & Industrial Battery Storage</h3>
+                    <p class="service-subtitle">Behind-the-meter energy storage solutions</p>
+                    <div class="service-price">Custom Pricing Based on Project Scope</div>
+                    <p>Peak shaving, demand charge reduction, backup power, and resilience for commercial and industrial facilities across Illinois.</p>
                     <ul class="service-features">
                         <li>Building permit & fire code compliance</li>
-                        <li>Utility rate analysis & optimization</li>
-                        <li>VPP program participation support</li>
+                        <li>ComEd/Ameren rate analysis & optimization</li>
+                        <li>Virtual Power Plant (VPP) participation support</li>
                         <li>Site electrical capacity assessment</li>
+                        <li>Fire marshal coordination (NFPA 855)</li>
                         <li>Vendor coordination & project management</li>
                     </ul>
                 </div>
 
-                <!-- Service 4 -->
+                <!-- Service 5: Site Identification -->
                 <div class="service-card">
                     <div class="service-icon">📍</div>
                     <h3>Site Identification & Feasibility</h3>
-                    <p class="service-price">Starting at $5,000</p>
-                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Pre-development site analysis</em></p>
-                    <p>Identify optimal battery storage sites before committing capital to permitting and development.</p>
+                    <p class="service-subtitle">Pre-development analysis for solar & storage</p>
+                    <div class="service-price">Custom Pricing Based on Project Scope</div>
+                    <p>Identify optimal sites for solar and battery storage projects before committing capital to full development.</p>
                     <ul class="service-features">
-                        <li>Substation proximity & capacity analysis</li>
+                        <li>ComEd/Ameren substation proximity analysis</li>
                         <li>Zoning & land use pre-screening</li>
                         <li>Preliminary interconnection assessment</li>
                         <li>Environmental constraints review</li>
+                        <li>Solar resource analysis & shading studies</li>
                         <li>Site ranking & comparative analysis</li>
                     </ul>
                 </div>
 
-                <!-- Service 5 -->
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>Project Rescue & Remediation</h3>
-                    <p class="service-price">Custom Pricing</p>
-                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>Stuck permits, community opposition</em></p>
-                    <p>Get stalled energy storage projects back on track with expert troubleshooting.</p>
-                    <ul class="service-features">
-                        <li>Permit denial analysis & appeal strategy</li>
-                        <li>Community opposition mitigation</li>
-                        <li>Interconnection queue issue resolution</li>
-                        <li>Alternative site/approach development</li>
-                        <li>Timeline recovery planning</li>
-                    </ul>
-                </div>
-
-                <!-- Service 6 -->
+                <!-- Service 6: Due Diligence -->
                 <div class="service-card">
                     <div class="service-icon">📊</div>
-                    <h3>Infrastructure Due Diligence</h3>
-                    <p class="service-price">Starting at $10,000</p>
-                    <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;"><em>For investors & developers</em></p>
-                    <p>Assess infrastructure risks and opportunities before property or portfolio acquisition.</p>
+                    <h3>Energy Infrastructure Due Diligence</h3>
+                    <p class="service-subtitle">For investors, developers, and property owners</p>
+                    <div class="service-price">Custom Pricing Based on Project Scope</div>
+                    <p>Assess solar and battery storage development potential and risks before property or portfolio acquisition.</p>
                     <ul class="service-features">
-                        <li>Existing infrastructure audit</li>
-                        <li>Battery storage development potential</li>
-                        <li>Solar + storage feasibility</li>
+                        <li>Solar & battery storage development feasibility</li>
+                        <li>Existing infrastructure audit & valuation</li>
+                        <li>CRGA and Illinois Shines eligibility analysis</li>
                         <li>Regulatory compliance assessment</li>
                         <li>Investment-grade reporting</li>
+                        <li>Portfolio-level analysis for multi-site owners</li>
                     </ul>
                 </div>
             </div>
             
             <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--color-bg); border-radius: 12px;">
-                <p style="font-size: 1.1rem; color: var(--color-text);"><strong>Multi-Site Projects & Large Portfolios:</strong> Volume discounts available for developers with multiple Illinois sites. Custom scoping for 10+ project pipelines.</p>
-                <a href="#contact" style="display: inline-block; margin-top: 1rem; color: var(--color-accent); text-decoration: none; font-weight: 600;">Discuss Your Portfolio →</a>
+                <h3 style="margin-bottom: 1rem;">Transparent Project-Based Pricing</h3>
+                <p style="font-size: 1.05rem; color: var(--color-text); max-width: 800px; margin: 0 auto;">Every Illinois solar and battery storage project is unique. After a free initial consultation, we provide detailed proposals tailored to your specific requirements—whether it's a 100 kW C&I installation or a 100 MW utility-scale project. Our fees align with your project timeline and complexity.</p>
+                <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--color-text-light);"><strong>Multi-Site Projects:</strong> Volume discounts available for developers with multiple Illinois solar or storage sites. Custom scoping for 10+ project pipelines.</p>
+                <a href="#contact" style="display: inline-block; margin-top: 1.5rem; color: var(--color-accent); text-decoration: none; font-weight: 600; font-size: 1.05rem;">Request Free Project Consultation →</a>
+            </div>
+            
+            <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: 12px; border: 1px solid #e5e7eb;">
+                <h4 style="color: var(--color-primary); margin-bottom: 1rem; text-align: center;">Additional Infrastructure Services</h4>
+                <p style="text-align: center; color: var(--color-text-light); max-width: 700px; margin: 0 auto;">With 15+ years of experience across multiple infrastructure sectors, we also support fiber coordination, EV charging installation permitting, and other energy infrastructure projects when they complement solar and storage development. <a href="#contact" style="color: var(--color-accent); text-decoration: none;">Contact us</a> to discuss your specific needs.</p>
             </div>
         </div>
     </section>
@@ -672,7 +785,7 @@
             <div class="download-box">
                 <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔋</div>
                 <h3>Free Download: Illinois Battery Storage Permitting Guide</h3>
-                <p style="max-width: 700px; margin: 0 auto; margin-bottom: 1.5rem;">Navigate CRGA requirements, funding opportunities, and approval processes for energy storage projects. Includes permitting checklists, timeline expectations, and strategic site selection criteria.</p>
+                <p style="max-width: 700px; margin: 0 auto; margin-bottom: 1.5rem;">Navigate CRGA requirements, funding opportunities, and approval processes for battery storage projects in Illinois. Includes permitting checklists, timeline expectations, ComEd/Ameren interconnection guidance, and strategic site selection criteria.</p>
                 <form class="download-form" name="battery-download" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?battery-download=true">
                     <input type="hidden" name="form-name" value="battery-download">
                     <p style="display: none;"><label>Don't fill this out: <input name="bot-field"></label></p>
@@ -687,7 +800,7 @@
     <section id="case-studies" class="section">
         <div class="container">
             <div class="text-center">
-                <h2>Battery Storage Project Experience</h2>
+                <h2>Illinois Solar & Battery Storage Project Experience</h2>
                 <p style="max-width: 800px; margin: 0 auto; color: var(--color-text-light); font-size: 1.1rem;">Real projects. Real outcomes. Real timeline compression.</p>
             </div>
             
@@ -700,7 +813,7 @@
                             <div class="case-study-tag">50 MW Battery Storage</div>
                         </div>
                     </div>
-                    <p><strong>Challenge:</strong> Solar developer needed to add 50 MW battery storage to qualify for Illinois CRGA Coal-to-Solar Grant Program ($5.5M potential grant). Project faced complex ComEd interconnection requirements and municipal permitting in jurisdiction with no prior energy storage approvals.</p>
+                    <p><strong>Challenge:</strong> Solar developer needed to add 50 MW battery storage to existing solar project to qualify for Illinois CRGA Coal-to-Solar Grant Program ($5.5M potential grant). Project faced complex ComEd interconnection requirements and municipal permitting in jurisdiction with no prior energy storage approvals.</p>
                     <div class="case-study-result">
                         <strong>Result:</strong> Secured special use permit in 7 months • Navigated ComEd interconnection queue • Positioned for $5.5M CRGA grant award
                     </div>
@@ -711,15 +824,15 @@
                 <div class="case-study">
                     <div class="case-study-header">
                         <div>
-                            <h3>Community Solar + Storage Permitting</h3>
-                            <div class="case-study-tag">Illinois Shines Project</div>
+                            <h3>Community Solar + Storage Hybrid Project</h3>
+                            <div class="case-study-tag">Illinois Shines + CRGA</div>
                         </div>
                     </div>
-                    <p><strong>Challenge:</strong> Community solar developer wanted to add battery storage to 2 MW solar project to increase project value and qualify for additional CRGA incentives. Needed to navigate both Illinois Shines program requirements and local zoning for storage component.</p>
+                    <p><strong>Challenge:</strong> Community solar developer wanted to add battery storage to 2 MW solar project to increase project value and qualify for additional CRGA incentives. Needed to navigate both Illinois Shines program requirements and local zoning for storage component while maintaining community solar approval.</p>
                     <div class="case-study-result">
-                        <strong>Result:</strong> Approved as accessory use (no additional permits required) • Qualified for DG Rebate + VPP enrollment • 4 months total timeline
+                        <strong>Result:</strong> Approved as accessory use (no additional permits) • Qualified for DG Rebate + VPP enrollment • 4 months total timeline
                     </div>
-                    <p><strong>Solution:</strong> Positioned battery storage as "accessory use" to approved solar farm, eliminating need for separate special use permit. Coordinated Illinois Power Agency approval for combined solar+storage project and facilitated VPP program enrollment for ongoing revenue stream.</p>
+                    <p><strong>Solution:</strong> Positioned battery storage as "accessory use" to approved Illinois Shines solar farm, eliminating need for separate special use permit. Coordinated Illinois Power Agency approval for combined solar+storage project and facilitated VPP program enrollment for ongoing revenue stream.</p>
                 </div>
 
                 <!-- Case Study 3 -->
@@ -730,11 +843,11 @@
                             <div class="case-study-tag">C&I Battery Storage</div>
                         </div>
                     </div>
-                    <p><strong>Challenge:</strong> 500,000 sq ft industrial warehouse faced $15,000+/month demand charges. Owner wanted to install 500 kW/2 MWh battery system but needed to navigate complex fire code requirements and utility coordination.</p>
+                    <p><strong>Challenge:</strong> 500,000 sq ft industrial warehouse in Aurora faced $15,000+/month demand charges from ComEd. Owner wanted to install 500 kW/2 MWh battery system but needed to navigate complex fire code requirements, building permits, and utility coordination.</p>
                     <div class="case-study-result">
-                        <strong>Result:</strong> Building permit approved in 6 weeks • Fire marshal sign-off achieved • Projected $120K annual savings on demand charges
+                        <strong>Result:</strong> Building permit approved in 6 weeks • Fire marshal sign-off achieved • Projected $120K annual savings on ComEd demand charges
                     </div>
-                    <p><strong>Solution:</strong> Prepared NFPA 855 compliant fire safety documentation, coordinated fire department pre-installation walkthrough, managed ComEd interconnection notification, and structured system to qualify for future VPP program participation.</p>
+                    <p><strong>Solution:</strong> Prepared NFPA 855 compliant fire safety documentation, coordinated fire department pre-installation walkthrough, managed ComEd interconnection notification, and structured system to qualify for future VPP program participation for additional revenue.</p>
                 </div>
             </div>
         </div>
@@ -745,22 +858,26 @@
         <div class="container">
             <div class="about-content">
                 <div>
-                    <h2>Deep Illinois Energy Infrastructure Expertise</h2>
-                    <p style="margin-bottom: 1.5rem;">Over 15 years navigating the complex intersection of energy infrastructure, utility coordination, and municipal regulation across Illinois and the Midwest. Specialized focus on emerging battery storage market created by Illinois CRGA legislation.</p>
+                    <h2>Deep Illinois Solar & Energy Storage Expertise</h2>
+                    <p style="margin-bottom: 1.5rem;">Over 15 years navigating the complex intersection of energy infrastructure, utility coordination, and municipal regulation across Illinois and the Midwest. Specialized focus on Illinois solar development and the emerging battery storage market created by CRGA legislation.</p>
                     
                     <p style="font-weight: 600; margin-bottom: 1rem; color: var(--color-primary);">Core Expertise:</p>
                     <ul style="list-style: none; padding: 0;">
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
-                            Battery storage permitting (utility-scale, C&I, community solar+storage)
+                            Solar + battery storage hybrid project development
                         </li>
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
-                            ComEd & Ameren interconnection navigation
+                            Illinois Shines program navigation and approvals
                         </li>
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
-                            CRGA funding program expertise (Coal-to-Solar, DG Rebate, VPP)
+                            CRGA funding expertise (Coal-to-Solar, DG Rebate, VPP programs)
+                        </li>
+                        <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
+                            ComEd & Ameren interconnection coordination
                         </li>
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
@@ -772,33 +889,60 @@
                         </li>
                         <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
                             <span style="position: absolute; left: 0; color: var(--color-accent); font-weight: bold;">✓</span>
-                            Solar + storage hybrid project development
+                            Community solar and utility-scale solar development
                         </li>
                     </ul>
                     
-                    <p style="margin-top: 1.5rem;"><strong>Currently advising battery storage developers, solar+storage projects, and C&I facility owners across Illinois pursuing CRGA-related opportunities.</strong></p>
+                    <p style="margin-top: 1.5rem;"><strong>Currently advising solar developers, battery storage developers, and C&I facility owners across Illinois pursuing CRGA and Illinois Shines opportunities.</strong></p>
                     
                     <p style="margin-top: 1rem;"><em>Independent advisory—no equipment sales, no development conflicts. Recommendations based solely on project feasibility, regulatory compliance, and commercial viability.</em></p>
                 </div>
                 
                 <div class="about-stats">
-                    <div class="stat-box">
+                    <div class="about-stat-box">
                         <div class="stat-number">$280M+</div>
-                        <div>CRGA Funding Pool</div>
+                        <div>CRGA Funding Pool Available</div>
                     </div>
-                    <div class="stat-box">
+                    <div class="about-stat-box">
                         <div class="stat-number">3,000 MW</div>
-                        <div>Illinois Storage Target</div>
+                        <div>Illinois Battery Storage Target</div>
                     </div>
-                    <div class="stat-box">
+                    <div class="about-stat-box">
                         <div class="stat-number">15+</div>
-                        <div>Years Experience</div>
+                        <div>Years Infrastructure Experience</div>
                     </div>
-                    <div class="stat-box">
+                    <div class="about-stat-box">
                         <div class="stat-number">2026-2030</div>
-                        <div>CRGA Timeline</div>
+                        <div>CRGA Implementation Timeline</div>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Service Area -->
+            <div style="margin-top: 3rem;">
+                <h3 style="text-align: center; margin-bottom: 1.5rem;">Serving Illinois Statewide</h3>
+                <p style="text-align: center; color: var(--color-text-light); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">From Chicago to Springfield, Rockford to Carbondale—we provide solar and battery storage development services across all of Illinois, including ComEd and Ameren territories.</p>
+                
+                <div class="locations">
+                    <div class="location-card">
+                        <h4>Chicago Metro</h4>
+                        <p style="font-size: 0.9rem; color: var(--color-text-light);">Chicago, Aurora, Naperville, Joliet, Elgin, Waukegan, Schaumburg</p>
+                    </div>
+                    <div class="location-card">
+                        <h4>Northern Illinois</h4>
+                        <p style="font-size: 0.9rem; color: var(--color-text-light);">Rockford, DeKalb, Sterling, Dixon, Freeport</p>
+                    </div>
+                    <div class="location-card">
+                        <h4>Central Illinois</h4>
+                        <p style="font-size: 0.9rem; color: var(--color-text-light);">Springfield, Peoria, Bloomington, Champaign, Decatur</p>
+                    </div>
+                    <div class="location-card">
+                        <h4>Southern Illinois</h4>
+                        <p style="font-size: 0.9rem; color: var(--color-text-light);">Carbondale, Marion, Mt. Vernon, Centralia</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 2rem; text-align: center; color: var(--color-text-light); font-size: 0.95rem;"><strong>ComEd Territory:</strong> Northern Illinois including Chicago metro<br><strong>Ameren Territory:</strong> Central and Southern Illinois</p>
             </div>
         </div>
     </section>
@@ -807,8 +951,8 @@
     <section id="contact" class="section">
         <div class="container">
             <div class="text-center">
-                <h2>Discuss Your Illinois Battery Storage Project</h2>
-                <p style="max-width: 700px; margin: 0 auto; color: var(--color-text-light); font-size: 1.1rem;">Whether you're planning utility-scale deployment, adding storage to solar projects, or evaluating C&I opportunities—we provide clarity on CRGA requirements and approval timelines.</p>
+                <h2>Discuss Your Illinois Solar or Battery Storage Project</h2>
+                <p style="max-width: 750px; margin: 0 auto; color: var(--color-text-light); font-size: 1.1rem;">Whether you're planning utility-scale deployment, community solar development, adding storage to solar projects, or evaluating C&I opportunities—we provide clarity on Illinois requirements, CRGA funding, and approval timelines.</p>
             </div>
             
             <div class="contact-grid">
@@ -865,22 +1009,23 @@
                             <label>Project Type *</label>
                             <select name="project-type" required>
                                 <option value="">Select...</option>
-                                <option value="utility-scale">Utility-Scale Battery Storage (1+ MW)</option>
-                                <option value="solar-storage">Solar + Storage Project</option>
-                                <option value="ci-storage">C&I Battery Storage</option>
+                                <option value="solar-storage">Solar + Battery Storage (Hybrid Project)</option>
+                                <option value="utility-battery">Utility-Scale Battery Storage (1+ MW)</option>
+                                <option value="solar-development">Solar Development (Utility-Scale or Community Solar)</option>
+                                <option value="ci-battery">C&I Battery Storage (Commercial/Industrial)</option>
+                                <option value="ci-solar">C&I Solar (Commercial/Industrial)</option>
                                 <option value="site-feasibility">Site Identification & Feasibility</option>
-                                <option value="project-rescue">Project Rescue / Stuck Permit</option>
-                                <option value="due-diligence">Infrastructure Due Diligence</option>
-                                <option value="other">Other Energy Storage Project</option>
+                                <option value="due-diligence">Energy Infrastructure Due Diligence</option>
+                                <option value="other">Other Energy Project</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
                             <label>Project Details</label>
-                            <textarea name="project-details" placeholder="Project location, capacity, current stage, timeline, etc."></textarea>
+                            <textarea name="project-details" placeholder="Project location, capacity, current stage, timeline, CRGA eligibility, etc."></textarea>
                         </div>
                         
-                        <button type="submit" class="cta-button" style="width: 100%;">Request Consultation</button>
+                        <button type="submit" class="cta-button" style="width: 100%;">Request Free Consultation</button>
                     </form>
                 </div>
             </div>
@@ -891,7 +1036,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Southline Development Services. All rights reserved.</p>
-            <p style="margin-top: 0.5rem; font-size: 0.875rem;">Illinois battery storage permitting, CRGA compliance, and energy infrastructure development services.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.875rem;">Illinois solar development, battery storage permitting, CRGA compliance, and energy infrastructure services. Serving ComEd and Ameren territories statewide.</p>
         </div>
     </footer>
 
